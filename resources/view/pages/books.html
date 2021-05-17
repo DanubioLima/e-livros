@@ -1,0 +1,38 @@
+<section>
+    <h1 class="title">Cadastre um novo livro</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        <div class="field">
+            <label id="name" class="label">Nome*</label>
+            <div class="control">
+                <input class="input" name="nome" required type="text" placeholder="Ex: Dom Casmurro">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Autor*</label>
+            <div class="control">
+                <input class="input" name="autor" required type="text" placeholder="Ex: Machado de Assis">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Comentário*</label>
+            <div class="control">
+                <textarea class="textarea" name="comentario" required
+                    placeholder="Deixe alguma nota ou comentário sobre sua leitura"></textarea>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Imagem*</label>
+            <input type="file" name="imagem" accept=".png, .jpg, .jpeg" required>
+        </div>
+
+        <div class="field">
+            <div class="control">
+                <button type="submit" class="button is-link mt-3">Enviar</button>
+            </div>
+        </div>
+    </form>
+</section>

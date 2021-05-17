@@ -1,0 +1,6 @@
+# liga o rewrite
+RewriteEngine on
+
+#redirecionar tudo para o index
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ ./index.php [QSA,NC]
